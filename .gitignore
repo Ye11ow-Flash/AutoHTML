@@ -1,0 +1,6 @@
+data/*
+__pycache__/*
+templates/*.png
+templates/ui.html
+templates/ui.*
+model/*.h5
