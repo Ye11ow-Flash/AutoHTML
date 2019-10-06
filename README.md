@@ -1,6 +1,6 @@
 <p align="center">
   <a href="#" rel="noopener">
- <img width=300px src="./static/logo.PNG" alt="AutoHTML-logo"></a>
+ <img width=300px src="./static/logo" alt="AutoHTML-logo"></a>
 </p>
 
 <h3 align="center">Generate HTML Automatically!</h3>
