@@ -37,11 +37,7 @@ def download_html():
         filename = file.filename
         destination = "/".join([target, filename])
         file.save(destination)
-        try:
-            res = main(destination)
-            return render_template('ui.html')
-        except:
-            return send_file('templates/ui.html',as_attachment=True)
-
+        res = main(destination)
+    return send_file('templates/ui.html',as_attachment=True)
 if __name__ == '__main__':
     app.run(host='127.0.0.1', port=5000,debug = True)
