@@ -35,6 +35,13 @@
 ------------------------------------------
 
 
+### Future Plans
+
+- Improve UI
+- Upload multiple files at a time
+
+------------------------------------------
+
 ### Note
 
 - This project was done under `24 hours with minimal pre-preparation`
