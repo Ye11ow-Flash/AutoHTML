@@ -1,0 +1,32 @@
+<html>
+<body>
+<form id="upload-form" action="{{ url_for('get_html') }}" method="POST" enctype="multipart/form-data">
+<input id="file-picker" class="btn btn-primary btn-lg text-center" type="file" name="file" accept="image/*" required multiple>					
+                    <div for="file"></div>
+					<br>
+                <input type="text" id="uname" name="user_name" style="display:none">
+
+					<input class="btn btn-primary btn-lg" type="submit" value="Upload!" id="upload-button">
+					<input class="btn btn-primary btn-lg" type="reset">
+</form>
+<script>
+    $("#file-picker").change(function(){
+        var input = document.getElementById('file-picker');
+        for (var i=0; i<input.files.length; i++)
+        {
+        //koala.jpg, koala.JPG substring(index) lastIndexOf('a') koala.1.jpg
+            var ext= input.files[i].name.substring(input.files[i].name.lastIndexOf('.')+1).toLowerCase()
+            if ((ext == 'jpg') || (ext == 'png'))
+            {
+                $("#msg").text("Files are supported")
+            }
+            else
+            {
+                $("#msg").text("Files are NOT supported")
+                document.getElementById("file-picker").value ="";
+            }
+        }
+    } );
+</script>
+</body>
+</html>
