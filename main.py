@@ -37,7 +37,6 @@ class Major:
         self.model = self.load_model(model_json_path, model_weights_path)
     
     def convert(self, output_folder, png_path, print_generated_output, get_sentence_bleu, original_gui_filepath):
-        # print("\n\n\noutput_folder",output_folder,"png_path",png_path,"og_gui_oath",original_gui_filepath,' hahahah\n\n')
         png_filename = os.path.basename(png_path)
         if png_filename.find('.png') == -1:
             raise ValueError("Image is not a png!")
@@ -115,9 +114,3 @@ class Major:
         bg_img[27:227, 27:227,:] = resized
         bg_img /= 255
         return bg_img
-
-
-
-
-
-
