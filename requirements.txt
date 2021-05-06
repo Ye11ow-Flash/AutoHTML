@@ -1,5 +1,5 @@
 Flask==1.0.2
-Flask-Cors==3.0.8
+Flask-Cors==3.0.9
 gunicorn==19.9.0
 Keras==2.3.0
 Keras-Applications==1.0.7
